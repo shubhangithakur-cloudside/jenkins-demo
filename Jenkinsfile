@@ -3,9 +3,9 @@ node {
     git branch: 'main', url: 'https://github.com/nkchauhan003/jenkins-demo.git'
   }
 
-  stage("Compilation") {
-    sh "./mvnw clean install -DskipTests"
-  }
+//   stage("Compilation") {
+//     sh "./mvnw clean install -DskipTests"
+//   }
 
   stage("Tests and Deployment") {
     stage("Runing unit tests") {
